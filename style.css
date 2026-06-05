@@ -10,7 +10,7 @@
     --transition-speed: 0.3s;
 }
 
-/* Třídy, které se aktivují JavaScriptem při přepnutí na tmavý režim */
+/* Aktivují JavaScriptem při přepnutí na tmavý režim */
 [data-theme="dark"] {
     --bg-color: #1a202c;
     --text-color: #f7fafc;
@@ -21,7 +21,7 @@
     --border-color: #4a5568;
 }
 
-/* Reset a základní styly */
+/* základní styly */
 * {
     margin: 0;
     padding: 0;
@@ -105,7 +105,7 @@ body {
 /* Hlavní layout obsahu */
 main {
     max-width: 1200px;
-    margin: 80px auto 0 auto; /* Odsazení kvůli fixní hlavičce */
+    margin: 80px auto 0 auto; /* Odsazení kvůli ZAFIXNÍ hlavičce */
     padding: 2rem;
 }
 
@@ -162,7 +162,7 @@ section {
     border: 5px solid var(--accent-color);
 }
 
-/* Styly pro O mně */
+/* Styly O mně */
 .about h2, .projects h2, .skills h2 {
     font-size: 2.25rem;
     margin-bottom: 2.5rem;
@@ -189,7 +189,7 @@ section {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* Styly pro Projekty */
+/* Styly Projekty */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -238,7 +238,7 @@ section {
     font-weight: 600;
 }
 
-/* Styly pro Dovednosti */
+/* Styly Dovednosti */
 .skills-list {
     display: flex;
     flex-wrap: wrap;
@@ -255,7 +255,7 @@ section {
     font-size: 1.1rem;
 }
 
-/* Styly pro Patičku */
+/* Styly pro patičku */
 .site-footer {
     background-color: var(--card-bg);
     border-top: 1px solid var(--border-color);
@@ -286,7 +286,7 @@ section {
     opacity: 0.8;
 }
 
-/* Responzivní design pro menší zařízení */
+/* Responzivní design pro telefony */
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
