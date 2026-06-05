@@ -1,11 +1,11 @@
-// Počkám, až se kompletně načte DOM struktura stránky
+// Čekání, až se kompletně načte DOM struktura stránky
 document.addEventListener('DOMContentLoaded', () => {
     
     // Výběr elementů pro přepínání vzhledu (Dark Mode)
     const themeToggleBtn = document.getElementById('theme-toggle');
     const currentTheme = localStorage.getItem('theme');
 
-    // Pokud už uživatel v minulosti režim vybral, nastavím ho
+    // Když by byl pro daný prohlížeč režim z minulého načtení, tak se načte a použije
     if (currentTheme) {
         document.documentElement.setAttribute('data-theme', currentTheme);
         if (currentTheme === 'dark') {
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Malý JavaScriptový bonus: Aktivní zvýraznění položek v menu podle toho, kde se na stránce nacházíme
+    // zvýraznění položek v menu podle toho, kde se na stránce nacházím
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.main-nav a');
 
